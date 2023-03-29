@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import './Signup.css';
-import Login from '../Login/Login'
 import {Link} from 'react-router-dom'
 
 
