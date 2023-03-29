@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './Signup.css';
-import Login from '../Login/Login';
-import SetProfile from '../SetProfile/SetProfile';
+import Login from '../Login/Login'
 import {Link} from 'react-router-dom'
 
 
@@ -22,7 +21,9 @@ const Signup = () => {
                     <input type="password" id="pass" name="pass" placeholder="*******" minLength="6" required />
                     <label htmlFor="confirm-pass">Confirm Password</label>
                     <input type="password" id="confirm-pass" name="confirm-pass" placeholder="*******" minLength="6" required />
-                    <button type="submit" className='btn signup' href='/setProfile'>Sign up</button>
+                    <button type="submit" className='btn signup' href='/setProfile'>
+                      <Link to="/setProfile">Signup</Link>
+                    </button>
                 </form>
                 <div className="btn-container">
                     <a className='btn'>

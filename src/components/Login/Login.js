@@ -15,8 +15,8 @@ const Login = () => {
             <input type="email" id="email" name="email" placeholder="Enter your email" required />
             <label htmlFor="pass">Password</label>
             <input type="password" id="pass" name="pass" placeholder="*******" required />
-            <button type="submit" className='btn login'>
-                <Link to="/" className='login-2'>Login</Link>
+            <button type="submit" className='btn login login-btn'>
+                <Link to="/" className='login-btn'>Login</Link>
             </button>
         </form>
         <div className="btn-container">

@@ -1,3 +1,7 @@
+* {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -48,14 +52,21 @@ form .login {
   padding: 13px 0px;
   width: 100%;
   text-align: center;
-  text-decoration: none;
   background-color: rgb(255, 174, 0);
   color: white;
   border: none;
   outline: none;
   transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+form .login-btn {
+  text-decoration: none;
+  color: white;
 }
 form .login:hover {
+  background-color: rgb(240, 164, 0);
+}
+form .login:active {
   background-color: rgb(214, 146, 0);
 }
 
