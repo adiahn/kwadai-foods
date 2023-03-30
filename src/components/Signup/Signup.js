@@ -2,12 +2,10 @@ import React, {useEffect, useState} from 'react';
 import './Signup.css';
 import {Link} from 'react-router-dom'
 
-
 const Signup = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
   }
-
   return (
             <div className="container">
                 <h1>SIGN UP</h1>
@@ -32,5 +30,4 @@ const Signup = () => {
             </div>
   );
 };
-
 export default Signup;

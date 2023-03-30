@@ -1,0 +1,41 @@
+* {
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgb(255, 174, 0);
+  padding: 0%;
+  margin: 0;
+}
+
+.SetProfile {
+  background-color: white;
+  height: 80vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.SetProfile .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+}
+.SetProfile .buttons button {
+  outline: none;
+  border: none;
+  background-color: rgb(241, 166, 2);
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.SetProfile:hover {
+  box-shadow: 2px 2px 40px rgba(199, 113, 0, 0.651);
+  transform: scale(1.0009);
+  transition: 0.2s ease-in-out;
+}/*# sourceMappingURL=SetProfile.css.map */
