@@ -1,41 +1,60 @@
-*button{
-    color: white;
-}
-h1,h2,h3,h4,h5,h6{
-    color: rgb(255, 174, 0);
-    padding: 0%;
-    margin: 0;
-}
-.SetProfile{
-    background-color: white;
-    height: 80vh;
-    width: 60vw;
+$orange: rgb(255, 174, 0);
+$yellow: rgb(241, 166, 2);
+
+.SetProfile {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .inputs {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid $orange;
+      border-radius: 5px;
+    }
+  }
+
+  .buttons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    .buttons{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: auto;
-        button{
-            outline: none;
-            border: none;
-            background-color: rgb(241, 166, 2);
-            padding: 10px 40px;
-            cursor: pointer;
-            border-radius: 3px;
-        }
+    align-items: center;
+    margin-top: 10px;
 
+    button {
+      outline: none;
+      border: none;
+      background-color: $yellow;
+      padding: 10px 40px;
+      cursor: pointer;
+      border-radius: 3px;
+      margin-bottom: 10px;
     }
-}
+  }
 
-
-.SetProfile:hover{
-    box-shadow: 2px 2px 40px rgba(199, 113, 0, 0.651);
-    transform: scale(1.0009);
-    transition: .2s ease-in-out;
+  @media screen and (min-width: 768px) {
+    max-width: 500px;
+    margin: 0 auto;
+    height: auto;
+  }
 }

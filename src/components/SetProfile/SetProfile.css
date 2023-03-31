@@ -1,29 +1,39 @@
-* button {
-  color: white;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: rgb(255, 174, 0);
-  padding: 0%;
-  margin: 0;
-}
-
 .SetProfile {
   background-color: white;
-  height: 80vh;
-  width: 60vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 5px;
   text-align: center;
 }
+.SetProfile h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.SetProfile .inputs {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.SetProfile .inputs input {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid rgb(255, 174, 0);
+  border-radius: 5px;
+}
 .SetProfile .buttons {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: auto;
+  margin-top: 10px;
 }
 .SetProfile .buttons button {
   outline: none;
@@ -32,10 +42,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 40px;
   cursor: pointer;
   border-radius: 3px;
+  margin-bottom: 10px;
 }
-
-.SetProfile:hover {
-  box-shadow: 2px 2px 40px rgba(199, 113, 0, 0.651);
-  transform: scale(1.0009);
-  transition: 0.2s ease-in-out;
+@media screen and (min-width: 768px) {
+  .SetProfile {
+    max-width: 500px;
+    margin: 0 auto;
+    height: auto;
+  }
 }/*# sourceMappingURL=SetProfile.css.map */
