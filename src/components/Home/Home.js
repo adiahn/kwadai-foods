@@ -1,12 +1,16 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import "./Home.css"
+import Nav from './Nav/Nav'
+import ProductList from './ProductsList/ProductList'
+
 
 
 const Home = () => {
   return (
-    <div>
-      Home..<br />
-        <Link to="/Login">Logout</Link>
+    <div className='home'>
+      <Nav />
+      <ProductList />
     </div>
   )
 }

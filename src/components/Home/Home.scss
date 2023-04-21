@@ -1,0 +1,42 @@
+/* Reset all styles to a baseline */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    line-height: 1;
+    color: inherit;
+  }
+  
+.home{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(241, 237, 233);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    flex-basis: 10vw;
+    width: 25vw;
+    height: auto;
+    background-color: white;
+    // border: 1px solid black;
+    flex-grow: 1;
+}
+
+.ProductsList{
+    display: flex;
+    flex-basis: 50vw;
+    flex-grow: 3;
+    height: auto;
+    // background-color: white;
+    // border: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+    
+  }
