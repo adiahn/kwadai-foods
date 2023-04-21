@@ -25,6 +25,7 @@
   height: auto;
   background-color: white;
   flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .ProductsList {
@@ -32,4 +33,56 @@
   flex-basis: 50vw;
   flex-grow: 3;
   height: auto;
+  flex-shrink: 3;
+}
+
+@media screen and (max-width: 1068px) {
+  .nav {
+    background-color: red;
+    flex-basis: 13vw;
+    transition: 0.5s ease-in-out;
+    flex-shrink: 1;
+  }
+  .ProductsList {
+    flex-grow: 3;
+    height: auto;
+    flex-shrink: 3;
+  }
+}
+@media screen and (max-width: 820px) {
+  .nav {
+    background-color: rgb(0, 89, 255);
+    flex-basis: 17vw;
+    transition: 0.5s ease-in-out;
+    flex-shrink: 1;
+  }
+  .ProductsList {
+    flex-grow: 3;
+    height: auto;
+    flex-shrink: 3;
+  }
+}
+@media screen and (max-width: 700px) {
+  .nav {
+    background-color: rgb(162, 0, 255);
+    flex-basis: 22vw;
+    transition: 0.5s ease-in-out;
+    flex-shrink: 1;
+  }
+  .ProductsList {
+    flex-grow: 3;
+    height: auto;
+    flex-shrink: 3;
+  }
+}
+@media screen and (max-width: 568px) {
+  .nav {
+    display: none;
+    transition: 0.1s ease-out;
+  }
+  .ProductsList {
+    flex-grow: 3;
+    height: auto;
+    flex-shrink: 3;
+  }
 }/*# sourceMappingURL=Home.css.map */
