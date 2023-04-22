@@ -1,9 +1,12 @@
 import React from 'react'
+import TopNav from './TopNav';
+import BotNav from './BotNav';
 
 const Nav = () => {
   return (
     <div className='nav'>
-        Nav
+        <TopNav />
+        <BotNav />
     </div>
   )
 }
