@@ -1,54 +1,68 @@
-.container {
+.signup-container {
   display: flex;
   flex-direction: column;
   padding: 15px 50px;
   background-color: rgb(255, 253, 240);
   border-radius: 5px;
-  transition: all 0.2s ease-in-out; /* add transition property */
-  /* add hover effect for the container */
+  transition: all 0.2s ease-in-out;
+  height: 80vh;
+  justify-content: space-around;
 }
-.container h1 {
+.signup-container h1 {
   text-align: center;
   color: rgb(255, 174, 0);
   margin: 0;
   padding: 0;
 }
-.container form {
+.signup-container .signup-form {
   display: flex;
   flex-direction: column;
-  gap: 5.5px;
+  width: 25vw;
+  height: 45vh;
+  justify-content: space-around;
+  padding-top: 10px;
 }
-.container form label {
+.signup-container .signup-form label {
   line-height: 50px;
 }
-.container form input:focus {
+.signup-container .signup-form input {
+  border: none;
+  border-bottom: 1px solid orange;
+  outline: none;
+  padding: 5px 10px;
+  background-color: rgba(245, 222, 179, 0);
+  transition: background-color 0.2s ease-in-out;
+}
+.signup-container .signup-form input:focus,
+.signup-container .signup-form input:active {
   background-color: rgba(0, 0, 0, 0.022);
   border-top-right-radius: 2px;
   border-top-left-radius: 2px;
   transition: 0.1s ease-in-out;
 }
-.container form .signup {
-  padding: 13px 0px;
-  width: 17.12rem;
-  text-align: center;
+.signup-container .signup-form .btn-link {
   text-decoration: none;
   background-color: rgb(255, 174, 0);
   color: white;
   border: none;
+  padding: 10px;
+  text-align: center;
   outline: none;
+  background-color: rgb(255, 174, 0);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.container form .signup:active {
-  background-color: rgb(214, 146, 0);
-  transition: 0.2s;
+.signup-container .signup-form .btn-link:hover {
+  background-color: rgb(238, 163, 1);
 }
-.container .btn-container {
+.signup-container .btn-container {
   padding: 10px 0px;
 }
-.container .btn-container a {
+.signup-container .btn-container a {
   color: rgb(214, 146, 0);
   text-decoration: none;
 }
-.container .btn-container a:active {
+.signup-container .btn-container a:active {
   color: rgb(255, 255, 255);
   text-decoration: none;
   background-color: rgb(255, 174, 0);
@@ -56,7 +70,72 @@
   transition: 0.2s ease-in-out;
   border-radius: 2px;
 }
-.container:hover {
+.signup-container:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 50px;
+  background-color: rgb(255, 253, 240);
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  height: 80vh;
+  justify-content: space-around;
+}
+.signup-container h1 {
+  text-align: center;
+  color: rgb(255, 174, 0);
+  margin: 0;
+  padding: 0;
+}
+.signup-container .signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 45vh;
+  justify-content: space-around;
+}
+.signup-container .signup-form label {
+  line-height: 50px;
+}
+.signup-container .signup-form input:focus,
+.signup-container .signup-form input:active {
+  background-color: rgba(0, 0, 0, 0.022);
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  transition: 0.1s ease-in-out;
+}
+.signup-container .signup-form .btn-signup {
+  text-decoration: none;
+  background-color: rgb(255, 174, 0);
+  color: white;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 174, 0);
+  margin-top: 20px;
+}
+.signup-container .signup-form .btn-link:hover {
+  background-color: rgb(238, 163, 1);
+}
+.signup-container .btn-container {
+  padding: 10px 0px;
+}
+.signup-container .btn-container a {
+  color: rgb(214, 146, 0);
+  text-decoration: none;
+}
+.signup-container .btn-container a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: rgb(255, 174, 0);
+  padding: 5px;
+  transition: 0.2s ease-in-out;
+  border-radius: 2px;
+}
+.signup-container:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }/*# sourceMappingURL=Signup.css.map */

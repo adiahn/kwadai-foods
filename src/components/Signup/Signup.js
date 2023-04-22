@@ -7,9 +7,9 @@ const Signup = () => {
     event.preventDefault();
   }
   return (
-            <div className="container">
+            <div className="signup-container">
                 <h1>SIGN UP</h1>
-                <form id="signup-form" name="signup-form" onSubmit={handleSubmit}>
+                <form id="signup-form" className='signup-form' name="signup-form" onSubmit={handleSubmit}>
                     <label htmlFor="text">Full Name</label>
                     <input type="text" id="text" name="text" placeholder="Enter your full name" required />
                     <label htmlFor="email">Email or Username</label>
@@ -18,9 +18,7 @@ const Signup = () => {
                     <input type="password" id="pass" name="pass" placeholder="*******" minLength="6" required />
                     <label htmlFor="confirm-pass">Confirm Password</label>
                     <input type="password" id="confirm-pass" name="confirm-pass" placeholder="*******" minLength="6" required />
-                    <button type="submit" className='btn signup' href='/setProfile'>
-                      <Link to="/setProfile">Signup</Link>
-                    </button>
+                    <Link to="/setProfile" className='btn-link'>Signup</Link>
                 </form>
                 <div className="btn-container">
                     <a className='btn'>

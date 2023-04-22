@@ -27,27 +27,31 @@ h1 {
   font-size: 24px;
 }
 
-form {
+#login-form {
   display: flex;
   flex-direction: column;
   width: 25vw;
   height: 45vh;
+  justify-content: space-around;
 }
-form label {
+#login-form label {
   line-height: 20px;
 }
-form input {
+#login-form input {
   border: none;
   border-bottom: 1px solid orange;
   outline: none;
-  padding: 10px 30px;
+  padding: 10px 10px;
   background-color: rgba(245, 222, 179, 0);
   transition: background-color 0.2s ease-in-out;
 }
-form input:focus {
+#login-form input:focus {
   background-color: rgba(0, 0, 0, 0.022);
 }
-form .login {
+#login-form input:active {
+  background-color: rgba(0, 0, 0, 0.022);
+}
+#login-form .login {
   padding: 13px 0px;
   width: 100%;
   text-align: center;
@@ -58,21 +62,23 @@ form .login {
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
 }
-form .btn-link {
+#login-form .btn-link {
   padding: 10px 150px;
   background-color: rgb(255, 174, 0);
+  color: white;
+  outline: none;
 }
-form .btn-link:hover {
+#login-form .btn-link:hover {
   background-color: rgb(238, 163, 1);
 }
-form .login-btn {
+#login-form .login-btn {
   text-decoration: none;
   color: white;
 }
-form .login:hover {
+#login-form .login:hover {
   background-color: rgb(240, 164, 0);
 }
-form .login:active {
+#login-form .login:active {
   background-color: rgb(214, 146, 0);
 }
 
