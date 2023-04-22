@@ -21,15 +21,6 @@
 .container form label {
   line-height: 50px;
 }
-.container form input {
-  width: 16rem;
-  height: 1rem;
-  border: none;
-  border-bottom: 1px solid orange;
-  outline: none;
-  padding: 10px 10px;
-  background-color: rgba(245, 222, 179, 0);
-}
 .container form input:focus {
   background-color: rgba(0, 0, 0, 0.022);
   border-top-right-radius: 2px;
