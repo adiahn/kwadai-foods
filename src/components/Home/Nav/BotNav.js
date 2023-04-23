@@ -1,10 +1,12 @@
 import React from 'react'
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+
 
 const BotNav = () => {
   return (
     <div className='bot-nav'>
       <ul className='setting-nav'>
-        <li>Settings</li>
+        <li><SettingsOutlinedIcon/>Settings</li>
       </ul>
     </div>
   )

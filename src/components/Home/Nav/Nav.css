@@ -23,10 +23,12 @@
   justify-content: space-between;
 }
 .top-nav .img-section img {
-  width: 100px;
+  width: 80px;
 }
 .top-nav .img-section h2 {
   color: orange;
+  font-size: larger;
+  letter-spacing: 1px;
 }
 .top-nav .nav-links {
   list-style: none;
@@ -39,6 +41,11 @@
 .top-nav .nav-links li {
   width: inherit;
   padding: 10px 30px;
+}
+.top-nav .nav-links li section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .top-nav .nav-links li:hover {
   background-color: rgb(235, 235, 235);

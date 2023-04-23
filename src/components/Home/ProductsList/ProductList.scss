@@ -1,0 +1,30 @@
+.ProductList{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+
+    .bodyHeader{
+        width: inherit;
+        border: 1px solid black;
+        padding: 10px 10px;
+    }
+
+    .Slider{
+        width: inherit;
+        border: 1px solid black;
+        padding: 10px 10px;
+    }
+
+    .categories{
+        width: inherit;
+        border: 1px solid black;
+        padding: 10px 10px;
+    }
+
+    .products{
+        width: inherit;
+        border: 1px solid black;
+        padding: 10px 10px;
+    }
+
+}
