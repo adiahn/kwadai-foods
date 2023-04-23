@@ -3,10 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 100%;
   font-family: inherit;
-  vertical-align: baseline;
-  line-height: 1;
   color: inherit;
 }
 
@@ -16,13 +13,14 @@
   background-color: rgb(241, 237, 233);
   display: flex;
   justify-content: space-between;
+  overflow: auto; /* add this line to enable scrolling */
 }
 
 .nav {
   display: flex;
   flex-basis: 10vw;
-  width: 25vw;
-  height: auto;
+  width: 20vw;
+  height: 100vh;
   background-color: white;
   flex-grow: 1;
   flex-shrink: 1;
@@ -32,7 +30,7 @@
   display: flex;
   flex-basis: 50vw;
   flex-grow: 3;
-  height: auto;
+  height: 100vh;
   flex-shrink: 3;
 }
 
@@ -40,7 +38,6 @@
   .nav {
     background-color: red;
     flex-basis: 13vw;
-    transition: 0.5s ease-in-out;
     flex-shrink: 1;
   }
   .ProductsList {
@@ -53,7 +50,6 @@
   .nav {
     background-color: rgb(0, 89, 255);
     flex-basis: 17vw;
-    transition: 0.5s ease-in-out;
     flex-shrink: 1;
   }
   .ProductsList {
@@ -64,21 +60,7 @@
 }
 @media screen and (max-width: 700px) {
   .nav {
-    background-color: rgb(162, 0, 255);
-    flex-basis: 22vw;
-    transition: 0.5s ease-in-out;
-    flex-shrink: 1;
-  }
-  .ProductsList {
-    flex-grow: 3;
-    height: auto;
-    flex-shrink: 3;
-  }
-}
-@media screen and (max-width: 568px) {
-  .nav {
     display: none;
-    transition: 0.1s ease-out;
   }
   .ProductsList {
     flex-grow: 3;

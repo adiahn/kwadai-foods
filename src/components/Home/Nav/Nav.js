@@ -1,4 +1,5 @@
 import React from 'react'
+import './Nav.css'
 import TopNav from './TopNav';
 import BotNav from './BotNav';
 

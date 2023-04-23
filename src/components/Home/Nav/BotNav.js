@@ -2,8 +2,8 @@ import React from 'react'
 
 const BotNav = () => {
   return (
-    <div>
-      <ul>
+    <div className='bot-nav'>
+      <ul className='setting-nav'>
         <li>Settings</li>
       </ul>
     </div>

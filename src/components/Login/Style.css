@@ -39,7 +39,7 @@ h1 {
 }
 #login-form input {
   border: none;
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid rgb(255, 174, 0);
   outline: none;
   padding: 10px 10px;
   background-color: rgba(245, 222, 179, 0);
