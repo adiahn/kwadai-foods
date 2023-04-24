@@ -1,3 +1,5 @@
+$primary-color: #FF6633;
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -27,7 +29,7 @@
             width: 80px;
         }
         h2{
-            color: orange;
+            color: $primary-color;
             font-size: larger;
             letter-spacing: 1px;
         }
@@ -54,7 +56,7 @@
         li:hover{
             background-color: rgb(235, 235, 235);
             font-weight: bolder;
-            color: orange;
+            color: $primary-color;
             transition: .1s ease-in-out;
         }
     }
@@ -77,6 +79,20 @@
         li{
             width: inherit;
             padding: 5px 30px;
+            width: inherit;
+            padding: 10px 30px;
+            section{
+                display: flex;
+                align-items: center;
+                // justify-content: center;
+                gap: 20px;
+            }   
+        }
+        li:hover{
+            background-color: rgb(235, 235, 235);
+            font-weight: bolder;
+            color: $primary-color;
+            transition: .1s ease-in-out;
         }
     }
 }

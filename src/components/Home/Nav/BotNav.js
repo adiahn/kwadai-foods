@@ -6,7 +6,12 @@ const BotNav = () => {
   return (
     <div className='bot-nav'>
       <ul className='setting-nav'>
-        <li><SettingsOutlinedIcon/>Settings</li>
+        <li>
+          <section>
+            <SettingsOutlinedIcon/>
+            Settings
+          </section>
+        </li>
       </ul>
     </div>
   )

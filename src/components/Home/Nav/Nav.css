@@ -26,7 +26,7 @@
   width: 80px;
 }
 .top-nav .img-section h2 {
-  color: orange;
+  color: #FF6633;
   font-size: larger;
   letter-spacing: 1px;
 }
@@ -50,7 +50,7 @@
 .top-nav .nav-links li:hover {
   background-color: rgb(235, 235, 235);
   font-weight: bolder;
-  color: orange;
+  color: #FF6633;
   transition: 0.1s ease-in-out;
 }
 
@@ -73,6 +73,19 @@
 .bot-nav .setting-nav li {
   width: inherit;
   padding: 5px 30px;
+  width: inherit;
+  padding: 10px 30px;
+}
+.bot-nav .setting-nav li section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.bot-nav .setting-nav li:hover {
+  background-color: rgb(235, 235, 235);
+  font-weight: bolder;
+  color: #FF6633;
+  transition: 0.1s ease-in-out;
 }
 
 @media screen and (max-width: 968px) {
