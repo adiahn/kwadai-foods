@@ -1,6 +1,5 @@
 $primary-color: #FF6633;
 
-
 .ProductList{
     display: flex;
     flex-direction: column;
@@ -45,7 +44,10 @@ $primary-color: #FF6633;
             justify-content: space-evenly;
             flex-basis: 50px;
             flex-grow: 1;
-            
+            color: $primary-color;
+            Link:hover{
+                font-weight: bolder;
+            }
         }
         .logo{
             display: none;
@@ -60,14 +62,33 @@ $primary-color: #FF6633;
 
     .Slider{
         width: inherit;
-        border: 1px solid black;
-        padding: 10px 10px;
+        height: 30vh;
+        background: $primary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
     }
 
     .categories{
         width: inherit;
-        border: 1px solid black;
-        padding: 10px 10px;
+        padding: 10px 1px;
+        display: flex;
+        ul{
+            display: flex;
+            gap: 10px;
+            justify-content: space-evenly;
+            flex-grow: 1;
+            li{
+                list-style: none;
+                width: 150px;
+                text-align: center;
+                border: 1px solid red;
+                height: 20px;
+                padding-bottom: 25px;
+            }
+            
+        }
     }
 
     .products{
