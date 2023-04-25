@@ -1,9 +1,14 @@
 import React from 'react'
+import FoodCard from './FoodCard';
 
 const Products = () => {
   return (
     <div className='products'>
-      Products
+      <FoodCard />
+      <FoodCard />
+      <FoodCard />
+      <FoodCard />
+      <FoodCard />
     </div>
   )
 } 

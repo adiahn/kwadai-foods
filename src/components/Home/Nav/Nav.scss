@@ -97,6 +97,22 @@ $primary-color: #FF6633;
     }
 }
 
+
+@media screen and (max-width: 1020px) {
+    .top-nav{
+        .img-section{
+            h2{
+                font-size: large;
+            }
+        }
+        .nav-links{
+            li{
+                padding: 10px 5px;
+            }
+        }
+    }
+  }
+
 @media screen and (max-width: 968px) {
     .top-nav{
         .img-section{
@@ -106,7 +122,7 @@ $primary-color: #FF6633;
         }
         .nav-links{
             li{
-                padding: 10px 20px;
+                padding: 10px 5px;
             }
         }
     }
