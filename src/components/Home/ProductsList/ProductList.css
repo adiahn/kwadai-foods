@@ -12,7 +12,6 @@
 }
 .ProductList .bodyHeader .handBurger {
   flex-basis: 50px;
-  display: flex;
   justify-content: center;
   align-items: center;
   color: #FF6633;
@@ -23,12 +22,12 @@
   justify-content: space-evenly;
   align-items: center;
   font-size: larger;
-  flex-basis: 200px;
+  flex-basis: 300px;
   flex-grow: 4;
   color: #FF6633;
 }
 .ProductList .bodyHeader .searchBar .search {
-  width: 450px;
+  width: 80%;
   outline: none;
   height: 40px;
   border-radius: 20px;
@@ -134,4 +133,51 @@
 .ProductList .products .card .productPrice {
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+  .ProductList .bodyHeader .handBurger {
+    display: block;
+  }
+  .ProductList .bodyHeader .searchBar .search {
+    width: 80%;
+    font-size: 0.8rem;
+    height: 35px;
+  }
+  .ProductList .bodyHeader .buttons {
+    flex-basis: 30%;
+  }
+  .ProductList .bodyHeader .buttons a {
+    font-size: 0.8rem;
+  }
+  .ProductList .bodyHeader .logo {
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+  }
+  .ProductList .bodyHeader .logo img {
+    width: 30px;
+  }
+  .ProductList .categories ul li {
+    padding: 10px;
+  }
+  .ProductList .categories ul li svg {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 0;
+  }
+  .ProductList .products .card {
+    width: 120px;
+    height: 160px;
+    margin: 5px;
+  }
+  .ProductList .products .card .productImage {
+    height: 80px;
+  }
+  .ProductList .products .card .productName {
+    font-size: 0.9rem;
+  }
+  .ProductList .products .card .productPrice {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=ProductList.css.map */
