@@ -1,269 +1,269 @@
 /* Product card styles */
 .card {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
-    &:hover {
-        transform: scale(1.02);
+  &:hover {
+    transform: scale(1.02);
+    transition: 1s ease-in-out;
+  }
+
+  &-bg {
+    height: 60%;
+    background-color: #f8f8f8;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-about {
+    padding: 10px;
+
+    .product-name {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 24px;
+      font-weight: bold;
     }
 
-    &-bg {
-        height: 60%;
-        background-color: #f8f8f8;
+    .card-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+      .price {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .likes-count {
+        display: flex;
+        align-items: center;
+
+        .liker {
+          margin-right: 5px;
+          color: #f44336;
+          cursor: pointer;
         }
+      }
     }
-
-    &-about {
-        padding: 10px;
-
-        .product-name {
-            margin-top: 10px;
-            margin-bottom: 5px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .card-details {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-
-            .price {
-                font-size: 18px;
-                font-weight: bold;
-            }
-
-            .likes-count {
-                display: flex;
-                align-items: center;
-
-                .liker {
-                    margin-right: 5px;
-                    color: #f44336;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
+  }
 }
 
 /* Modal styles */
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
-    position: relative;
-    width: 800px;
-    height: 500px;
+  position: relative;
+  width: 800px;
+  height: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+
+  .modal-image {
+    width: 50%;
+    height: 100%;
+    float: left;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .modal-details {
+    width: 50%;
+    height: 100%;
+    float: left;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-    overflow: hidden;
 
-    .modal-image {
-        width: 50%;
-        height: 100%;
-        float: left;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    .product-name {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 24px;
+      font-weight: bold;
     }
 
-    .modal-details {
-        width: 50%;
-        height: 100%;
-        float: left;
-        padding: 20px;
+    .description {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
 
-        .product-name {
-            margin-top: 10px;
-            margin-bottom: 5px;
-            font-size: 24px;
-            font-weight: bold;
+    .card-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .price {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+
+        button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
         }
 
-        .description {
-            margin-bottom: 10px;
-            font-size: 16px;
-            line-height: 1.5;
+        .buy-now {
+          background-color: #4caf50;
+          color: #fff;
+          margin-right: 10px;
+          transition: 0.3s ease-in-out;
         }
-
-        .card-details {
+        .food-card-modal {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 999;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+        
+          .modal-content {
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-
-            .price {
-                font-size: 18px;
-                font-weight: bold;
-            }
-
-            .buttons {
+            background-color: #fff;
+            padding: 1rem;
+            width: 90%;
+            max-width: 800px;
+            max-height: 90%;
+            overflow-y: auto;
+        
+            .modal-header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 1rem;
+              font-size: 1.25rem;
+        
+              .close-button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                font-size: 2rem;
                 display: flex;
                 align-items: center;
-
-                button {
-                    padding: 10px 20px;
-                    border: none;
-                    border-radius: 5px;
-                    font-size: 16px;
-                    font-weight: bold;
-                    cursor: pointer;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+        
+                &:focus {
+                  outline: none;
                 }
-
-                .buy-now {
+              }
+            }
+        
+            .modal-body {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+        
+              .image-container {
+                width: 50%;
+                padding: 1rem;
+        
+                img {
+                  width: 100%;
+                  height: auto;
+                }
+              }
+        
+              .details-container {
+                width: 50%;
+                padding: 1rem;
+        
+                .product-name {
+                  font-size: 1.5rem;
+                  margin-bottom: 1rem;
+                }
+        
+                .product-price {
+                  font-size: 1.25rem;
+                  margin-bottom: 1rem;
+                }
+        
+                .product-description {
+                  font-size: 1rem;
+                  margin-bottom: 1rem;
+                }
+        
+                .action-buttons {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+        
+                  button {
+                    padding: 0.75rem 1.5rem;
+                    margin-bottom: 1rem;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
                     background-color: #4caf50;
                     color: #fff;
-                    margin-right: 10px;
-                    transition: 0.3s ease-in-out;
-                }
-
-                .food-card-modal {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    z-index: 999;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    overflow: hidden;
-
-                    .modal-content {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        background-color: #fff;
-                        padding: 1rem;
-                        width: 90%;
-                        max-width: 800px;
-                        max-height: 90%;
-                        overflow-y: auto;
-
-                        .modal-header {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            margin-bottom: 1rem;
-                            font-size: 1.25rem;
-
-                            .close-button {
-                                background-color: transparent;
-                                border: none;
-                                cursor: pointer;
-                                font-size: 2rem;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                padding: 0;
-                                margin: 0;
-
-                                &:focus {
-                                    outline: none;
-                                }
-                            }
-                        }
-
-                        .modal-body {
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-
-                            .image-container {
-                                width: 50%;
-                                padding: 1rem;
-
-                                img {
-                                    width: 100%;
-                                    height: auto;
-                                }
-                            }
-
-                            .details-container {
-                                width: 50%;
-                                padding: 1rem;
-
-                                .product-name {
-                                    font-size: 1.5rem;
-                                    margin-bottom: 1rem;
-                                }
-
-                                .product-price {
-                                    font-size: 1.25rem;
-                                    margin-bottom: 1rem;
-                                }
-
-                                .product-description {
-                                    font-size: 1rem;
-                                    margin-bottom: 1rem;
-                                }
-
-                                .action-buttons {
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-
-                                    button {
-                                        padding: 0.75rem 1.5rem;
-                                        margin-bottom: 1rem;
-                                        font-size: 1rem;
-                                        font-weight: bold;
-                                        text-transform: uppercase;
-                                        border: none;
-                                        border-radius: 3px;
-                                        cursor: pointer;
-                                        background-color: #4caf50;
-                                        color: #fff;
-                                        transition: background-color 0.2s ease-in-out;
-
-                                        &:hover {
-                                            background-color: #388e3c;
-                                        }
-                                    }
-
-                                    .add-to-cart-button {
-                                        background-color: #03a9f4;
-
-                                        &:hover {
-                                            background-color: #0277bd;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                    transition: background-color 0.2s ease-in-out;
+        
+                    &:hover {
+                      background-color: #388e3c;
                     }
+                  }
+        
+                  .add-to-cart-button {
+                    background-color: #03a9f4;
+        
+                    &:hover {
+                      background-color: #0277bd;
+                    }
+                  }
                 }
+              }
             }
+          }
         }
     }
+}
+}
 }

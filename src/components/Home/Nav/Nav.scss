@@ -48,16 +48,19 @@ $primary-color: #FF6633;
             section{
                 display: flex;
                 align-items: center;
-                // justify-content: center;
-                gap: 20px;
+                gap: 10px;
             }
-
-        }
+            
+          }
+          .login{
+            display: none;
+          }
         li:hover{
             background-color: rgb(235, 235, 235);
             font-weight: bolder;
             color: $primary-color;
             transition: .1s ease-in-out;
+            cursor: pointer;
         }
     }
 }
@@ -70,16 +73,19 @@ $primary-color: #FF6633;
     justify-content: flex-end;
     padding: 30px 1px;
     flex-grow: 1;
+
     .settings-navigation{
         list-style: none;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         width: inherit;
+
         .settings-navigation__item{
             width: inherit;
             padding: 5px 30px;
             padding: 10px 30px;
+
             .icons-clicker{
                 display: flex;
                 align-items: center;
@@ -125,6 +131,9 @@ $primary-color: #FF6633;
     .nav-links {
       li {
         padding: 10px 3px;
+      }
+      .login{
+        display: flex;
       }
     }
   }

@@ -2,124 +2,118 @@
   text-decoration: none;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(255, 253, 240);
-  border-radius: 5px;
-  width: 30vw;
-  height: 70vh;
-  justify-content: space-around;
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-}
-h1 {
-  text-align: center;
-  color: rgb(255, 174, 0);
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-}
-
-#login-form {
-  display: flex;
-  flex-direction: column;
-  width: 25vw;
-  height: 45vh;
-  justify-content: space-around;
-}
-#login-form label {
-  line-height: 20px;
-}
-#login-form input {
-  border: none;
-  border-bottom: 1px solid rgb(255, 174, 0);
-  outline: none;
-  padding: 10px 10px;
-  background-color: rgba(245, 222, 179, 0);
-  transition: background-color 0.2s ease-in-out;
-}
-#login-form input:focus {
-  background-color: rgba(0, 0, 0, 0.022);
-}
-#login-form input:active {
-  background-color: rgba(0, 0, 0, 0.022);
-}
-#login-form .login {
-  padding: 13px 0px;
+.login-container {
   width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: rgba(255, 102, 51, 0.9254901961);
+  border-radius: 5px;
+}
+.login-container:hover {
+  transform: scale(1.02);
+}
+.login-container h2 {
   text-align: center;
-  background-color: rgb(255, 174, 0);
-  color: white;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #ffffff;
+}
+.login-container form .form-group {
+  margin-bottom: 20px;
+}
+.login-container form .form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 18px;
+}
+.login-container form .form-group input {
+  width: 100%;
+  padding: 10px;
   border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.login-container form .form-group input:focus {
   outline: none;
-  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.login-container form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #FF6633;
+  background-color: #ffffff;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
-#login-form .btn-link {
-  padding: 10px 150px;
-  background-color: rgb(255, 174, 0);
-  color: white;
-  outline: none;
+.login-container form button:hover {
+  background-color: #e6e6e6;
 }
-#login-form .btn-link:hover {
-  background-color: rgb(238, 163, 1);
-}
-#login-form .login-btn {
-  text-decoration: none;
-  color: white;
-}
-#login-form .login:hover {
-  background-color: rgb(240, 164, 0);
-}
-#login-form .login:active {
-  background-color: rgb(214, 146, 0);
-}
-
-.btn-container {
-  padding: 10px 0px;
+.login-container .login-options {
+  margin-top: 20px;
   text-align: center;
+  gap: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
-
-.btn-container a {
-  color: rgb(214, 146, 0);
+.login-container .login-options Link {
+  color: #ffffff;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  margin-right: 10px;
 }
-
-.btn-container a:hover {
-  color: rgb(255, 174, 0);
-  text-decoration: none;
-  background-color: rgba(255, 174, 0, 0.1);
-  padding: 5px;
-  border-radius: 2px;
+.login-container .login-options Link:hover {
+  text-decoration: underline;
 }
-
-/* Media queries for smaller devices */
-@media screen and (max-width: 480px) {
-  .container {
-    padding: 10px;
+@media only screen and (max-width: 768px) {
+  .login-container {
+    padding: 20px;
   }
-  h1 {
-    font-size: 20px;
+  .login-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
   }
-  form input {
-    height: 30px;
-    padding: 5px;
+  .login-container form .form-group label {
+    font-size: 16px;
   }
-  form .signup {
-    padding: 10px;
-  }
-  .btn-container {
-    padding: 5px 0px;
-  }
-  .btn-container a {
+  .login-container form .form-group input {
     font-size: 14px;
+  }
+  .login-container form button {
+    font-size: 16px;
+  }
+  .login-container .login-options {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+  }
+  .login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .login-container form .form-group label {
+    font-size: 14px;
+  }
+  .login-container form .form-group input {
+    font-size: 12px;
+  }
+  .login-container form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .login-container .login-options {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=Style.css.map */

@@ -12,6 +12,7 @@
 }
 .card:hover {
   transform: scale(1.02);
+  transition: 1s ease-in-out;
 }
 .card-bg {
   height: 60%;

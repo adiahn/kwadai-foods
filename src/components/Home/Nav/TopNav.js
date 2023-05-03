@@ -1,5 +1,6 @@
 import React from 'react';
 import { Dashboard, SystemSecurityUpdateGood, Inventory, Grade, Call } from '@mui/icons-material';
+import LoginIcon from '@mui/icons-material/Login';
 import Icon from '../../../Logo/Icon.png';
 
 const TopNav = () => {
@@ -38,6 +39,12 @@ const TopNav = () => {
           <section>
             <Call />
             <span>Contact Us</span>
+          </section>
+        </li>
+        <li className='login'>
+          <section>
+            <LoginIcon />
+            <span>Login</span>
           </section>
         </li>
       </ul>

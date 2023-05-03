@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 174, 0, 0.76);
+  background-color: white;
   width: 100vw;
   height: 100vh;
 }
+

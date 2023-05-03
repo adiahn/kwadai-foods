@@ -3,11 +3,9 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import garri from '../../../Products/garri.jpg';
 
-const FoodCard = ({ title }) => {
+const FoodCard = ({ title, price, id }) => {
   const [likesCount, setLikesCount] = useState(0);
   const [isLiked, setIsLiked] = useState(false);
-  const price = 0;
-
   const handleLikeClick = () => {
     if (isLiked) {
       setLikesCount(likesCount - 1);

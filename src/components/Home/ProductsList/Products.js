@@ -1,19 +1,30 @@
 import React from 'react';
 import FoodCard from './FoodCard';
-import garri from '../../../Products/garri.jpg';
 
-const MyProducts = [
-  { id: 1, title: 'Garri', price: 10.99, image: garri },
-  { id: 2, title: 'Garri', price: 10.99, image: garri },
-  { id: 3, title: 'Garri', price: 10.99, image: garri },
-  { id: 4, title: 'Garri', price: 10.99, image: garri }
-];
 
 const Products = () => {
+  const MyProducts = [
+    { id: 1, title: 'Garri', price: 10.99},
+    { id: 2, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 3, title: 'Garri', price: 10.99},
+    { id: 4, title: 'Garri', price: 10.99}
+  ];
   return (
     <div className="products">
       {MyProducts.map((product) => (
-        <FoodCard key={product.id} title={product.title} price={product.price} image={product.image} />
+        <FoodCard key={product.id} title={product.title} price={product.price}/>
       ))}
     </div>
   );

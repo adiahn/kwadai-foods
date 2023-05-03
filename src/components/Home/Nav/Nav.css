@@ -45,13 +45,17 @@
 .top-nav .nav-links li section {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+}
+.top-nav .nav-links .login {
+  display: none;
 }
 .top-nav .nav-links li:hover {
   background-color: rgb(235, 235, 235);
   font-weight: bolder;
   color: #FF6633;
   transition: 0.1s ease-in-out;
+  cursor: pointer;
 }
 
 .bottom-navigation {
@@ -104,5 +108,8 @@
   }
   .top-nav .nav-links li {
     padding: 10px 3px;
+  }
+  .top-nav .nav-links .login {
+    display: flex;
   }
 }/*# sourceMappingURL=Nav.css.map */

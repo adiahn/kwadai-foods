@@ -1,142 +1,151 @@
+// Primary color
+$primary-color: #ffffff;
 *{
   text-decoration: none;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  // padding: 15px 20px;
-  background-color: rgb(255, 253, 240);
+.login-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #ff6633ec;
   border-radius: 5px;
-  width: 30vw;
-  height: 70vh;
-  justify-content: space-around;
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-}
-
-h1 {
-  text-align: center;
-  color: rgb(255, 174, 0);
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-}
-
-#login-form {
-  display: flex;
-  flex-direction: column;
-  width: 25vw;
-  height: 45vh;
-  justify-content: space-around;
-
-  label {
-    line-height: 20px;
+  &:hover{
+    transform: scale(1.02);
+    
   }
 
-  input {
-    border: none;
-    border-bottom: 1px solid rgb(255, 174, 0);
-    outline: none;
-    padding: 10px 10px;
-    background-color: rgba(245, 222, 179, 0);
-    transition: background-color 0.2s ease-in-out;
-  }
-
-  input:focus {
-    background-color: rgba(0, 0, 0, 0.022);
-  }
-
-  input:active {
-    background-color: rgba(0, 0, 0, 0.022);
-  }
-
-  .login {
-    padding: 13px 0px;
-    width: 100%;
+  h2 {
     text-align: center;
-    background-color: rgb(255, 174, 0);
-    color: white;
-    border: none;
-    outline: none;
-    transition: background-color 0.2s ease-in-out;
-    cursor: pointer;
-  }
-  .btn-link{
-    padding: 10px 150px;
-    background-color: rgb(255, 174, 0);
-    color: white;
-    outline: none;
-  }
-  .btn-link:hover{
-    background-color: rgb(238, 163, 1);
-  }
-  
-  .login-btn{
-    text-decoration: none;
-    color: white;
-  }
-
-
-  .login:hover {
-    background-color: rgb(240, 164, 0);
-  }
-  .login:active {
-    background-color: rgb(214, 146, 0);
-  }
-}
-
-.btn-container {
-  padding: 10px 0px;
-  text-align: center;
-}
-
-.btn-container a {
-  color: rgb(214, 146, 0);
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-
-.btn-container a:hover {
-  color: rgb(255, 174, 0);
-  text-decoration: none;
-  background-color: rgba(255, 174, 0, 0.1);
-  padding: 5px;
-  border-radius: 2px;
-}
-
-/* Media queries for smaller devices */
-@media screen and (max-width: 480px) {
-  .container {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 20px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: $primary-color;
   }
 
   form {
-    input {
-      height: 30px;
-      padding: 5px;
+    .form-group {
+      margin-bottom: 20px;
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: $primary-color;
+        font-size: 18px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+        background-color: #f5f5f5;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+        &:focus {
+          outline: none;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+      }
     }
 
-    .signup {
+    button {
+      display: block;
+      width: 100%;
       padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      color: #FF6633;
+      background-color: $primary-color;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
     }
   }
 
-  .btn-container {
-    padding: 5px 0px;
+  .login-options {
+    margin-top: 20px;
+    text-align: center;
+    gap: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    Link {
+      color: $primary-color;
+      text-decoration: none;
+      margin-right: 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
-  .btn-container a {
-    font-size: 14px;
+  // Media queries
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      .form-group {
+        label {
+          font-size: 16px;
+        }
+
+        input {
+          font-size: 14px;
+        }
+      }
+
+      button {
+        font-size: 16px;
+      }
+    }
+
+    .login-options {
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding: 20px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      .form-group {
+        label {
+          font-size: 14px;
+        }
+
+        input {
+          font-size: 12px;
+        }
+      }
+
+      button {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+
+    .login-options {
+      font-size: 12px;
+    }
   }
 }
