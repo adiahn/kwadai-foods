@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+.card-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 .card-modal {
   display: flex;
   flex-wrap: wrap;

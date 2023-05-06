@@ -3,7 +3,7 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import garri from '../../../Products/garri.jpg';
 
-const FoodCard = ({ title, price, id }) => {
+const FoodCard = ({ title, price, id, onClick }) => {
   const [likesCount, setLikesCount] = useState(0);
   const [isLiked, setIsLiked] = useState(false);
   const handleLikeClick = () => {
@@ -14,13 +14,11 @@ const FoodCard = ({ title, price, id }) => {
     }
     setIsLiked(!isLiked);
   };
-  const showAlert = () => {
-    alert("Adiahn")
-  }
+  
   return (
     <div className='card'>
-      <div className='card-bg'>
-        <img src={garri} onClick={showAlert} alt='Image' />
+      <div className='card-bg' onClick={onClick}>
+        <img src={garri} alt='Image' />
       </div>
       <div className='card-about'>
         <h3 className='product-name'>{title}</h3>
