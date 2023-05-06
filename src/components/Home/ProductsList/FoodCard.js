@@ -14,11 +14,13 @@ const FoodCard = ({ title, price, id }) => {
     }
     setIsLiked(!isLiked);
   };
-
+  const showAlert = () => {
+    alert("Adiahn")
+  }
   return (
     <div className='card'>
       <div className='card-bg'>
-        <img src={garri} alt='Image' />
+        <img src={garri} onClick={showAlert} alt='Image' />
       </div>
       <div className='card-about'>
         <h3 className='product-name'>{title}</h3>

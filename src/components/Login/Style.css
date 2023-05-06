@@ -11,7 +11,9 @@
   border-radius: 5px;
 }
 .login-container:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
+  transition: 0.2s all ease-in-out;
+  box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.582);
 }
 .login-container h2 {
   text-align: center;

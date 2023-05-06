@@ -1,160 +1,194 @@
 .signup-container {
-  display: flex;
-  flex-direction: column;
-  padding: 15px 50px;
-  background-color: rgb(255, 253, 240);
-  border-radius: 5px;
-  transition: all 0.2s ease-in-out;
-  height: 80vh;
-  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 10px;
 
-  h1 {
+  h2 {
     text-align: center;
-    color: rgb(255, 174, 0);
-    margin: 0;
-    padding: 0;
+    margin-bottom: 20px;
   }
 
-  .signup-form {
+  form {
     display: flex;
-    flex-direction: column;
-    width: 25vw;
-    height: 45vh;
-    justify-content: space-around;
-    padding-top: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    label {
-      line-height: 50px;
-    }
-    input {
-      border: none;
-      border-bottom: 1px solid orange;
-      outline: none;
-      padding: 5px 10px;
-      background-color: rgba(245, 222, 179, 0);
-      transition: background-color 0.2s ease-in-out;
-    }
-
-    input:focus,
-    input:active {
-      background-color: rgba(0, 0, 0, 0.022);
-      border-top-right-radius: 2px;
-      border-top-left-radius: 2px;
-      transition: .1s ease-in-out;
-    }
-
-    .btn-link {
-      text-decoration: none;
-      background-color: rgb(255, 174, 0);
-      color: white;
-      border: none;
-      padding: 10px ;
-      text-align: center;
-      outline: none;
-      background-color: rgb(255, 174, 0);
-      margin-top: 20px;
+    .form-group {
+      flex: 1 0 45%;
       margin-bottom: 20px;
-    }
 
-    .btn-link:hover {
-      background-color: rgb(238, 163, 1);
-    }
-  }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+      }
 
-  .btn-container {
-    padding: 10px 0px;
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
 
-    a {
-      color: rgb(214, 146, 0);
-      text-decoration: none;
+        &:focus {
+          outline: none;
+          border-color: #FF6633;
+        }
+      }
 
-      &:active {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        background-color: rgb(255, 174, 0);
-        padding: 5px;
-        transition: .2s ease-in-out;
-        border-radius: 2px;
+      .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
       }
     }
   }
 
-  &:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
+  .signup-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    a {
+      color: #555;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #FF6633;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e55a2b;
+      }
+    }
   }
-}
+
+
+
+  @import './Signup.css';
+
 .signup-container {
   display: flex;
   flex-direction: column;
-  padding: 15px 50px;
-  background-color: rgb(255, 253, 240);
-  border-radius: 5px;
-  transition: all 0.2s ease-in-out;
-  height: 80vh;
-  justify-content: space-around;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 
-  h1 {
+  h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
     text-align: center;
-    color: rgb(255, 174, 0);
-    margin: 0;
-    padding: 0;
+    color: #333;
   }
 
-  .signup-form {
+  form {
     display: flex;
     flex-direction: column;
-    width: 25vw;
-    height: 45vh;
-    justify-content: space-around;
+    width: 100%;
 
-    label {
-      line-height: 50px;
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      label {
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #333;
+      }
+
+      input,
+      select {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: 1px solid #ccc;
+        font-size: 1rem;
+        color: #333;
+
+        &:focus {
+          outline: none;
+          border-color: #666;
+        }
+      }
+
+      .error {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #f00;
+      }
     }
 
-    input:focus,
-    input:active {
-      background-color: rgba(0, 0, 0, 0.022);
-      border-top-right-radius: 2px;
-      border-top-left-radius: 2px;
-      transition: .1s ease-in-out;
-    }
-
-    .btn-signup {
-      text-decoration: none;
-      background-color: rgb(255, 174, 0);
-      color: white;
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1rem;
+      border-radius: 0.25rem;
       border: none;
-      outline: none;
-      background-color: rgb(255, 174, 0);
-      margin-top: 20px;
-    }
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #fff;
+      background-color: #333;
+      cursor: pointer;
 
-    .btn-link:hover {
-      background-color: rgb(238, 163, 1);
+      &:hover {
+        background-color: #666;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
   }
+}
 
-  .btn-container {
-    padding: 10px 0px;
+  @media only screen and (max-width: 768px) {
+    padding: 30px;
 
-    a {
-      color: rgb(214, 146, 0);
-      text-decoration: none;
+    form {
+      .form-group {
+        flex: 1 0 100%;
+      }
+    }
 
-      &:active {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        background-color: rgb(255, 174, 0);
-        padding: 5px;
-        transition: .2s ease-in-out;
-        border-radius: 2px;
+    .signup-options {
+      flex-wrap: wrap;
+
+      a {
+        margin-top: 10px;
+        flex: 1 0 100%;
+      }
+
+      button[type="submit"] {
+        margin-top: 20px;
+        flex: 1 0 100%;
       }
     }
   }
 
-  &:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
+  @media only screen and (max-width: 480px) {
+    padding: 20px;
+
+    form {
+      .form-group {
+        flex: 1 0 100%;
+      }
+    }
   }
 }
