@@ -5,13 +5,18 @@ $primary-color: #FF6633;
 }
 
 .card-modal-container{
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  backdrop-filter: blur(10px);
-  // filter: blur(3px);
+  backdrop-filter: blur(5px);
+  background-color: #00000038;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-modal {
