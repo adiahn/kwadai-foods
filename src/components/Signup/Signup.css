@@ -2,37 +2,57 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 50px;
-  background-color: #fff;
+  background-color: #FF6633;
   border-radius: 10px;
   @import './Signup.css';
 }
 .signup-container h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: white;
 }
 .signup-container form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .signup-container form .form-group {
   flex: 1 0 45%;
   margin-bottom: 20px;
+  justify-content: center;
 }
 .signup-container form .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #555;
+  color: #ffffff;
 }
-.signup-container form .form-group input {
-  width: 100%;
+.signup-container form .form-group input, .signup-container form .form-group select {
+  width: 80%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  color: #FF6633;
 }
-.signup-container form .form-group input:focus {
+.signup-container form .form-group input:focus, .signup-container form .form-group select:focus {
   outline: none;
-  border-color: #FF6633;
+  background-color: #ececec;
+  border-color: #c0451c;
+}
+.signup-container form .form-group .btn {
+  padding: 10px 40px;
+  color: #FF6633;
+  background-color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.signup-container form .form-group .btn:hover {
+  background-color: #e55a2b;
+  color: white;
+  transition: 0.3s all ease-in-out;
+  border: 1px solid black;
 }
 .signup-container form .form-group .error {
   color: red;
@@ -51,18 +71,6 @@
 }
 .signup-container .signup-options a:hover {
   text-decoration: underline;
-}
-.signup-container .signup-options button[type=submit] {
-  padding: 10px 20px;
-  background-color: #FF6633;
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.signup-container .signup-options button[type=submit]:hover {
-  background-color: #e55a2b;
 }
 .signup-container .signup-container {
   display: flex;

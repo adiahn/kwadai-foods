@@ -147,7 +147,9 @@ const Signup = () => {
           <input type="date" id="dob" name="dob" value={formData.dob} onChange={handleInputChange} required />
           {formError.dob && <p className="error">{formError.dob}</p>}
         </div>
-        <button className="btn btn-primary" type="submit">Sign Up</button>
+        <div className='form-group'>
+          <button className="btn btn-primary" type="submit">Sign Up</button>
+        </div>
       </form>
       <div className="login-options">
         <Link to='/login'>Already have an account?</Link>

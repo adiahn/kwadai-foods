@@ -3,7 +3,7 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import garri from '../../../Products/garri.jpg';
 
-const FoodCard = ({ title, price, id, onClick }) => {
+const FoodCard = ({ title, price, onClick }) => {
   const [likesCount, setLikesCount] = useState(0);
   const [isLiked, setIsLiked] = useState(false);
   const handleLikeClick = () => {
@@ -25,14 +25,8 @@ const FoodCard = ({ title, price, id, onClick }) => {
         <section className='card-details'>
           <section className='price'>N{price}</section>
           <section className='likes-count'>
-            {isLiked ? (
-              <FavoriteOutlinedIcon className='liker' onClick={handleLikeClick} />
-            ) : (
-              <FavoriteBorderOutlinedIcon
-                className='liker'
-                onClick={handleLikeClick}
-              />
-            )}
+            {isLiked ? (<FavoriteOutlinedIcon className='liker' onClick={handleLikeClick}/>) : 
+            (<FavoriteBorderOutlinedIcon className='liker' onClick={handleLikeClick} />)}
             <p>{likesCount}</p>
           </section>
 

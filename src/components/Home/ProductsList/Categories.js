@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import ListCategories from './ListCategories'
 
 const Categories = () => {
   const foodCategories = [
@@ -13,13 +13,7 @@ const Categories = () => {
 
   return (
     <div className="categories">
-      <ul className="foodCategories">
-        {foodCategories.map((category) => (
-          <li key={category.path}>
-            <Link to={category.path}>{category.name}</Link>
-          </li>
-        ))}
-      </ul>
+      <ListCategories foodCategories={foodCategories}/>
     </div>
   );
 }

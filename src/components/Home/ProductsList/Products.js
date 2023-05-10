@@ -28,12 +28,16 @@ const Products = () => {
   ];
   
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [showAdded, setShowAdded] = useState(null);
   const handleCardClick = (product) => {
     setSelectedProduct(product);
   };
   const handleCloseModal = () => {
     setSelectedProduct(null);
   };
+  const handleShowAdded = () => {
+    setShowAdded(true)
+  }
   
   return (
     <div className="products">
@@ -41,10 +45,7 @@ const Products = () => {
         <FoodCard key={product.id} title={product.title} price={product.price} onClick={handleCardClick}/>
       ))}
       {selectedProduct && (
-        <CardModal
-          product={selectedProduct}
-          onCloseModal={handleCloseModal}
-        />
+        <CardModal product={selectedProduct} onCloseModal={handleCloseModal}/>
       )}
     </div>
   );

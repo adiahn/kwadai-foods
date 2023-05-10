@@ -1,8 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './Style.css';
 import {Link} from 'react-router-dom'
 
-const Login = () => {
+const Login = ({handleLoginStatus}) => {
+  const [loginStatus, setLoginStatus] = useState(false)
+  // const email = email.value;
+  // const handleLoginStatus = () => {
+  //   setLoginStatus(true);
+  //   if (password !== "1234" && email !== "user@user.com") {
+  //     alert("Please rewrite your password")
+  //   }
+  // }
   return (
     <div className="login-container">
       <h2>Login</h2>
@@ -13,10 +21,10 @@ const Login = () => {
         </div>
         <div className="form-group">
           <label htmlFor="password">Password</label>
-          <input type="password" id="password" name="password" required placeholder='Password'/>
+          <input type="password" id="password"  name="password" required placeholder='Password'/>
         </div>
         <Link to='/home'>
-           <button className="btn btn-primary">Login</button>
+           <button className="btn btn-primary" onClick={handleLoginStatus}>Login</button>
         </Link>
       </form>
       <div className="login-options">
